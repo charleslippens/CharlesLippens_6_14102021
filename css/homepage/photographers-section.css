@@ -64,14 +64,28 @@ section img:hover {
 	transform: scale(1.05);
 }
 
-@media screen and (min-width: 1170px) {
-	.tags {
-		display: flex;
-		justify-content: center;
-		margin-right: 0;
-	}
+main > a {
+	background: #db8876;
+	border-radius: 0.3125rem;
+	color: #000;
+	display: none;
+	flex-wrap: nowrap;
+	font-family: "DM Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	left: 0;
+	margin: 0 auto;
+	padding: 5px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	top: 2%;
+	width: 182px;
+	z-index: 1;
+}
 
-	section {
-		margin-top: 5rem;
-	}
+main > a:hover {
+	background: #901c1c;
+	color: #fff;
 }

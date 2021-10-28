@@ -1,8 +1,10 @@
 "use strict";
 
 //Afficher tous les photographes
+
 export default class HomePage {
 	// Construire la section photographe
+
 	displayPhotographers(data) {
 		let photographers = data.photographers;
 		photographers.map((photographe) => {
@@ -10,6 +12,7 @@ export default class HomePage {
 			let articlePhotographers = document.createElement("article");
 			articlePhotographers.className = photographe.tags.join(" ") + " articlePh";
 			let templatePhotographer = `
+			<a href="photographers.html?id=${photographe.id}" title="${photographe.name}">
                 <img src="${photographe.portrait}" alt="${photographe.alt}">
                 <h2 class="name">${photographe.name}</h2>
             </a>
