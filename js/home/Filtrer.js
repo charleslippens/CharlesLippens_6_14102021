@@ -1,6 +1,6 @@
 const url = "api/photographers.json";
 
-import { tags } from "./Tags.js";
+import { tags } from "./tags.js";
 
 // Fonction filters venant fetch les données et remplir les articles filtrés par tags
 export const filters = async function filters(filter) {

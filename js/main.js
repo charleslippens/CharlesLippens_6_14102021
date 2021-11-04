@@ -5,10 +5,10 @@ import ApiFish from "./fetch/API.js";
 
 // Page d'acceuil
 import HomePage from "./home/Home.js";
-import { tags } from "./home/Tags.js";
+import { tags } from "./home/tags.js";
 import MediaBuilder from "./photographes/Galerie.js";
 
-import PhotographerProfil from "./photographes/Photographe.js";
+import PhotographerProfil from "./photographes/photographe.js";
 
 (function Dispatcher() {
 	new ApiFish()
@@ -20,7 +20,7 @@ import PhotographerProfil from "./photographes/Photographe.js";
 				return;
 			}
 			// Page d'accueil (photos)
-			Tags();
+			tags();
 			new HomePage().displayPhotographers(data);
 		})
 		.catch(() => {
