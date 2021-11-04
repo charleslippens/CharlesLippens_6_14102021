@@ -5,7 +5,7 @@ import ApiFish from "./fetch/API.js";
 
 // Page d'acceuil
 import HomePage from "./home/Home.js";
-import { tags } from "./home/tags.js";
+import { tags } from "./home/ttags.js";
 import MediaBuilder from "./photographes/Galerie.js";
 
 import PhotographerProfil from "./photographes/photographe.js";
@@ -20,7 +20,7 @@ import PhotographerProfil from "./photographes/photographe.js";
 				return;
 			}
 			// Page d'accueil (photos)
-			tags();
+			ttags();
 			new HomePage().displayPhotographers(data);
 		})
 		.catch(() => {
