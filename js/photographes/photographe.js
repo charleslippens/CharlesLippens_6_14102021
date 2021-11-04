@@ -1,8 +1,9 @@
 "use strict";
-import Modale from "./modale.js";
-import Form from "./form.js";
+import Modale from "./Modale.js";
+import Form from "./Formulaire.js";
 export default class PhotographerProfil {
 	// vérifie sur quel page l'utilisateur est localisé, si cela correspond avec l'id du photographe, créer la section profil du photographe
+	// Appel classes modale et formulaire
 	displayPhotographerProfil(data) {
 		let photographersData = data.photographers;
 		const id = window.location.search.split("id=")[1];
