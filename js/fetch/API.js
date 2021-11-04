@@ -1,6 +1,7 @@
 "use strict";
 
 // récupérer les données photographes et medias
+
 export default class ApiFish {
 	async getDataFish() {
 		let url = "api/photographers.json";
