@@ -20,7 +20,7 @@ import PhotographerProfil from "./photographes/Photographe.js";
 				return;
 			}
 			// Page d'accueil (photos)
-			tags();
+			Tags();
 			new HomePage().displayPhotographers(data);
 		})
 		.catch(() => {
