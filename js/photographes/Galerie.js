@@ -1,7 +1,7 @@
 "use strict";
 
 import Media from "./Media.js";
-import Lightbox from "./lightBox.js";
+import Lightbox from "./lightbox.js";
 
 export default class Gallerie {
 	constructor() {
