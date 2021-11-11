@@ -1,5 +1,5 @@
 /* Triage */
-.works-sort {
+.works-tri {
 	display: none;
 }
 
@@ -43,13 +43,13 @@
 		width: 10rem;
 	}
 
-	.works-sort {
+	.works-tri {
 		display: block;
 		margin-left: 2rem;
 		margin-top: 2rem;
 	}
 
-	.works-sort > span {
+	.works-tri > span {
 		font-size: 1.2rem;
 		font-weight: 700;
 		margin-right: 1.5625rem;
