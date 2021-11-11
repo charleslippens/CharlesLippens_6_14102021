@@ -18,35 +18,56 @@
 
 	<body>
 		<header role="banner">
-			<a href="index.html" title="HomePage"
+			<a href="index.html" title="FishEye Home Page"
 				><img src="medias/logo.svg" alt="FishEye Home Page"
 			/></a>
 		</header>
 		<main>
 			<!-- header -->
-			<header id="ph-profil" aria-label="photographer information">
+			<header id="ph-profil" aria-label="photographer informations">
 				<section id="ph-profil-header"></section>
 			</header>
 			<!-- header -->
 
-			<section id="ph-works" aria-label="photographer works"></section>
+			<!-- Tri -->
+			<div class="works-tri">
+				<span id="tri-text">Trier par</span>
+				<div id="tri-wrapper">
+					<button class="tri-btn" aria-haspopup="listbox">Popularité</button>
+					<span class="fas fa-chevron-down arrow-down-open" role="button"></span>
+					<ul class="hidden-tri" role="listbox">
+						<li class="tri" role="option">
+							Popularité <span class="fas fa-chevron-up arrow-up-close"></span>
+						</li>
+						<li class="tri" role="option">Tître</li>
+					</ul>
+				</div>
+			</div>
 
-			<!--modale-->
+			<!-- Travaux -->
+
+			<section id="ph-works" aria-label="photographer travaux"></section>
+
+			<!-- Box -->
+
+			<div id="area" aria-label="photographer likes et prix"></div>
+
+			<!--Modale-->
 
 			<div
 				role="dialog"
 				id="form-dialog"
-				aria-label="contact me form"
+				aria-label="Contact Me form"
 				aria-labelledby="form-title"
 				aria-hidden="true"
 			>
 				<form action="photographer-page.html" method="POST" id="contact-form">
-					<header aria-label="contact form header">
+					<header aria-label="contact me header">
 						<h1 id="form-title">
 							<span>Contactez-moi</span>
 							<span id="ph-form-name"></span>
 						</h1>
-						<button id="close-btn" title="Close form" type="button">
+						<button id="close-btn" title="Close Contact form" type="button">
 							<span class="fas fa-times close-form-icon" aria-hidden="true"></span>
 						</button>
 					</header>

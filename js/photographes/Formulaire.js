@@ -1,4 +1,5 @@
 "use strict";
+console.log("hello");
 
 export default class Form {
 	fields() {
@@ -24,11 +25,21 @@ export default class Form {
 				lastName.style.border = "none";
 				email.style.border = "none";
 				message.style.border = "none";
+				this.consoleMessageValid(firstName, lastName, email, message);
 				document.getElementById("contact-form").reset();
 			} else {
 				this.errorVerification(firstName, lastName, email, message, regexFL);
 			}
 		});
+	}
+
+	consoleMessageValid(firstName, lastName, email, message) {
+		console.group("Contact Message");
+		console.log("Prénom : " + firstName.value);
+		console.log("Nom : " + lastName.value);
+		console.log("Email : " + email.value);
+		console.log("Message : " + message.value);
+		console.groupEnd();
 	}
 
 	errorVerification(firstName, lastName, email, message, regexFL) {
@@ -57,7 +68,7 @@ export default class Form {
 
 		if (elt.value.trim().match(regexE)) {
 			elt.parentElement.setAttribute("data-error-visible", "false");
-			elt.style.border = "solid #279e7a 0.19rem";
+			elt.style.border = "solid #279e7a 0.15rem";
 			return true;
 		}
 		elt.parentElement.setAttribute("data-error-visible", "true");
@@ -72,7 +83,7 @@ export default class Form {
 			return false;
 		}
 		elt.parentElement.setAttribute("data-error-visible", "false");
-		elt.style.border = "solid #279e7a 0.19rem";
+		elt.style.border = "solid #279e7a 0.15rem";
 		return true;
 	}
 }

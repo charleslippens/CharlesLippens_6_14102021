@@ -1,6 +1,6 @@
 /* section photographes */
 .articlePh {
-	margin: 0.5rem;
+	margin: 2px 132px;
 	padding: 0.3rem;
 	text-align: center;
 	width: 22rem;
@@ -8,23 +8,6 @@
 
 .articlePh a {
 	text-decoration: none;
-}
-
-.filter {
-	display: flex;
-	justify-content: center;
-	margin-right: 3rem;
-	margin-top: 0.5rem;
-}
-
-section {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	margin-bottom: 5rem;
-	margin-top: 7rem;
-	padding: 0;
-	width: 100%;
 }
 
 .location {
@@ -88,4 +71,42 @@ main > a {
 main > a:hover {
 	background: #901c1c;
 	color: #fff;
+}
+
+.tagsLinkElement {
+	text-decoration: none;
+	color: #901c1c;
+	height: 22 px;
+	margin: 5 px;
+	padding: 2 px 8 px;
+	border: solid 0.1 px #bebebe;
+	border-radius: 20 px;
+}
+
+.tagsLinkElement:focus,
+.tagsLinkElement:hover {
+	background-color: #901c1c;
+	color: #fff;
+}
+
+.tagSection ul {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	padding: 0px;
+}
+
+.tagSection ul li:hover {
+	background-color: #901c1c;
+	color: #fff;
+}
+
+#container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 5rem;
+	margin-top: 5rem;
 }

@@ -2,7 +2,7 @@
 import Modale from "./Modale.js";
 import Form from "./Formulaire.js";
 export default class PhotographerProfil {
-	// vérifie sur quel page l'utilisateur est localisé, si cela correspond avec l'id du photographe, créer la section profil du photographe
+	// Vérifie sur quel page l'utilisateur est localisé, si cela correspond avec l'id du photographe, créer la section profil du photographe
 	// Appel classes modale et formulaire
 	displayPhotographerProfil(data) {
 		let photographersData = data.photographers;
@@ -14,7 +14,7 @@ export default class PhotographerProfil {
 		const templatePhotographerProfil = `
             <article aria-label="Photographer Profil" class="ph-profil">
                 <div class='ph-infos'>
-                    <h2>${photographers[0].name}</h2>
+                    <h1>${photographers[0].name}</h1>
                     <p class="ph-city">${photographers[0].city}, ${photographers[0].country}</p>
                     <p class="ph-tagline">${photographers[0].tagline}</p>
                     <p >${photographers[0].tags

@@ -2,7 +2,10 @@
 
 import Media from "./Media.js";
 
-class Galerie {
+export default class Gallerie {
+	constructor() {
+		this.totalLike = 0;
+	}
 	// construit l'HTML galerie avec les différents médias
 	// section galerie pour chaque page des photographes
 	builder(dataMedia) {
@@ -23,30 +26,22 @@ class Galerie {
                 </a>
                 <div class="ph-work-elt-text">
                     <h2 class="ph-work-title">${element.photoName}</h2>
-                    <span class="ph-work-price">${element.price} €</span>
                     <div class='ph-elt-like'>
                     <span class="ph-work-like">
                         <a class="like-counter">${element.likes}</a>
                     </span>
-                    <i class="far fa-heart heart-btn" aria-label='likes' role="button"></i>
+                    <i class="far fa-heart heart-btn" role="button" data-value="${element.likes}"></i>
                     </div>
                 </div>
                 `;
 				articlePhWork.innerHTML = workTemplate;
 				sectionPhWorks.appendChild(articlePhWork);
 				articlePhWork.classList.add("ph-work-elt");
+				this.totalLike += parseInt(element.likes);
 				currentMedia.push(mediaHTML.outerHTML);
 				currentMediaName.push(element.photoName);
 			}
 		});
 		return this;
-	}
-}
-
-export default class MediaBuilder {
-	// Appel Gallerie pour créer une section media
-	photographersMedias(data) {
-		const media = data.media;
-		const gallery = new Galerie().builder(media);
 	}
 }

@@ -10,14 +10,12 @@ export default class HomePage {
 
 	displayPhotographers(data) {
 		let photographers = data.photographers;
+
 		photographers.map((photographe) => {
-			const tagPagePhotographe = window.location.search.split("-")[1]; //On sépare la chaine des paramètres en fonction de "-"
-			//	console.log(tagPagePhotographe);
-			if (tagPagePhotographe === undefined) {
-				let sectionPhotographers = document.getElementById("container");
-				let articlePhotographers = document.createElement("article");
-				articlePhotographers.className = photographe.tags.join(" ") + " articlePh";
-				let templatePhotographer = `
+			let sectionPhotographers = document.getElementById("container");
+			let articlePhotographers = document.createElement("article");
+			articlePhotographers.className = photographe.tags.join(" ") + " articlePh";
+			let templatePhotographer = `
 			<a href="photographes.html?id=${photographe.id}" title="${photographe.name}">
                 <img src="${photographe.portrait}" alt="${photographe.alt}">
                 <h2 class="name">${photographe.name}</h2>
@@ -25,14 +23,18 @@ export default class HomePage {
             <p class="location">${photographe.city}, ${photographe.country}</p>
             <p class="tagline">${photographe.tagline}</p>
             <p class="price">${photographe.price}€/jour</p>
-            <ul class="filter">${photographe.tags.map((tag) => `<li>#${tag}</li>`).join(" ")}</ul> 
+				<section class="tagSection">
+				<ul id="tagList${photographe.id}">
+				</ul>
+			  </section>
             `;
 
-				sectionPhotographers.appendChild(articlePhotographers);
-				articlePhotographers.innerHTML = templatePhotographer;
-			} else {
-				filters(tagPagePhotographe);
-			}
+			sectionPhotographers.appendChild(articlePhotographers);
+			articlePhotographers.innerHTML = templatePhotographer;
+			const tagList = document.getElementById(`tagList${photographe.id}`);
+			photographe.tags.forEach((tagsElement) => {
+				tagList.innerHTML += `<li id="tags"><a class="navFilter tagsLinkElement" href="#">#${tagsElement}</a></li>`;
+			});
 		});
 	}
 }

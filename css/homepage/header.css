@@ -4,6 +4,7 @@ h1 {
 	font-family: "DM Sans", sans-serif;
 	font-size: 14px;
 	width: fit-content;
+	margin-right: 100px;
 }
 
 header {
@@ -32,11 +33,28 @@ header nav ul {
 
 header img {
 	width: 8rem;
+	margin-left: 100px;
 }
 
-#container {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	flex-wrap: wrap;
+@media screen and (min-width: 1375px) {
+	h1 {
+		font-size: 1.8em;
+	}
+
+	header {
+		margin-top: 0;
+	}
+
+	header img {
+		width: 12.5rem;
+	}
+
+	header nav a {
+		margin-bottom: 0;
+	}
+
+	header nav ul {
+		top: 22px;
+		width: 39rem;
+	}
 }
