@@ -20,7 +20,6 @@ class Video {
 		const eltVideo = document.createElement("video");
 		eltVideo.setAttribute("src", element.video);
 		eltVideo.className = "ph-media";
-
 		return eltVideo;
 	}
 }
@@ -31,7 +30,6 @@ class Image {
 		const eltImage = document.createElement("img");
 		eltImage.setAttribute("src", element.image);
 		eltImage.className = "ph-media";
-
 		return eltImage;
 	}
 }

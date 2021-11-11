@@ -1,6 +1,7 @@
 "use strict";
 
 import Media from "./Media.js";
+import Lightbox from "./LightBox.js";
 
 export default class Gallerie {
 	constructor() {
@@ -41,6 +42,7 @@ export default class Gallerie {
 				this.totalLike += parseInt(element.likes);
 				currentMedia.push(mediaHTML.outerHTML);
 				currentMediaName.push(element.photoName);
+				new Lightbox().init(currentMedia, currentMediaName);
 			}
 		});
 		return this;

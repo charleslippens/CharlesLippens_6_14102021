@@ -1,5 +1,4 @@
 "use strict";
-console.log("hello");
 
 export default class Form {
 	fields() {
