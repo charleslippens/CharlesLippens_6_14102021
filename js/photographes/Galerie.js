@@ -37,6 +37,7 @@ export default class Gallerie {
 				articlePhWork.innerHTML = workTemplate;
 				sectionPhWorks.appendChild(articlePhWork);
 				articlePhWork.classList.add("ph-work-elt");
+				// calcul la somme et attribue le résultat a this.totallike
 				this.totalLike += parseInt(element.likes);
 				currentMedia.push(mediaHTML.outerHTML);
 				currentMediaName.push(element.photoName);
