@@ -76,11 +76,6 @@ main > a:hover {
 .tagsLinkElement {
 	text-decoration: none;
 	color: #901c1c;
-	height: 22 px;
-	margin: 5 px;
-	padding: 2 px 8 px;
-	border: solid 0.1 px #bebebe;
-	border-radius: 20 px;
 }
 
 .tagsLinkElement.actived {
