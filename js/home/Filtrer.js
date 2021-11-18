@@ -1,6 +1,6 @@
 const url = "api/photographers.json";
 
-import Tagging from "./tags.js";
+import Tagging from "./Tags.js";
 import ApiFish from "../fetch/API.js";
 let articles = document.querySelectorAll(".articlePh");
 
