@@ -14,7 +14,7 @@ export default class PhotographerProfil {
 		const templatePhotographerProfil = `
             <article aria-label="Photographer Profil" class="ph-profil">
                 <div class='ph-infos'>
-                    <h1>${photographers[0].name}</h1>
+                    <h2>${photographers[0].name}</h2>
                     <p class="ph-city">${photographers[0].city}, ${photographers[0].country}</p>
                     <p class="ph-tagline">${photographers[0].tagline}</p>
                     <p >${photographers[0].tags

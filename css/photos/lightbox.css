@@ -33,6 +33,21 @@
 	right: -3rem;
 	top: 0.5rem;
 }
+.left-arrow-lightbox {
+	color: #901c1c;
+	font-size: 2rem;
+	left: -3rem;
+	position: absolute;
+	top: 48%;
+}
+
+.right-arrow-lightbox {
+	color: #901c1c;
+	font-size: 2rem;
+	position: absolute;
+	right: -3rem;
+	top: 48%;
+}
 
 aside {
 	background-color: #fff;

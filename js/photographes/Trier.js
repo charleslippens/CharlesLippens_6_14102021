@@ -1,6 +1,6 @@
 "use strict";
 
-import Gallerie from "./Galerie.js";
+import Gallerie from "../FactoryMethod/Galerie.js";
 
 export default class TriMenu {
 	// Evenements, ouverterture/fermeture du menu de tri

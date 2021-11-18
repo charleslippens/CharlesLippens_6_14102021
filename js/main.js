@@ -5,11 +5,11 @@ import ApiFish from "./fetch/API.js";
 
 // Page d'acceuil
 import HomePage from "./home/Home.js";
-import { tags } from "./home/tags.js";
+import Tagging from "./home/Tags.js";
 import MediaBuild from "./photographes/Mediabuild.js";
 import TriMenu from "./photographes/Trier.js";
 
-import PhotographerProfil from "./photographes/photographe.js";
+import PhotographerProfil from "./photographes/Photographe.js";
 
 (function Dispatcher() {
 	new ApiFish()
@@ -25,7 +25,7 @@ import PhotographerProfil from "./photographes/photographe.js";
 				return;
 			}
 			// Page d'accueil (photos)
-			tags();
+			new Tagging().tags();
 			new HomePage().displayPhotographers(data);
 		})
 		.catch(() => {

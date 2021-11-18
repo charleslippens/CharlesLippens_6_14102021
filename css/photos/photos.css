@@ -5,7 +5,7 @@
 	margin: 0;
 }
 
-.ph-infos h1 {
+.ph-infos h2 {
 	color: #d3573c;
 	font-size: 2.4em;
 	font-weight: 400;
@@ -70,13 +70,20 @@
 	color: #fff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 	.ph-profil button {
 		left: 0;
 		margin-left: auto;
 		margin-right: auto;
 		right: 0;
 		z-index: 1;
+	}
+
+	.ph-profil button {
+		height: 55px;
+		left: 10rem;
+		position: absolute;
+		top: 11rem;
 	}
 }
 
@@ -88,7 +95,7 @@
 
 	.ph-profil button {
 		height: 55px;
-		left: 47rem;
+		left: 45rem;
 		position: absolute;
 		top: 11rem;
 	}

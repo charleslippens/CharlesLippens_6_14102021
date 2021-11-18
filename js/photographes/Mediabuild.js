@@ -1,5 +1,5 @@
 import LikesSub from "./Likes.js";
-import GalleryFactory from "./Galerie.js";
+import GalleryFactory from "../FactoryMethod/Galerie.js";
 
 export default class MediaBuild {
 	// Appel de Gallerie pour créer une section media

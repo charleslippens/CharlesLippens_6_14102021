@@ -1,7 +1,8 @@
 const url = "api/photographers.json";
 
-import { tags } from "./tags.js";
+import Tagging from "./tags.js";
 import ApiFish from "../fetch/API.js";
+let articles = document.querySelectorAll(".articlePh");
 
 // Fonction filters venant fetch les données et remplir les articles filtrés par tags
 export function filters(filter) {
@@ -29,10 +30,10 @@ export function filters(filter) {
 				articlePhotographers.innerHTML = templatePhotographer;
 				const tagList = document.getElementById(`tagList${photographe.id}`);
 				photographe.tags.forEach((tagsElement) => {
-					tagList.innerHTML += `<li id="tags"><a class="navFilter tagsLinkElement" href="#">#${tagsElement}</a></li>`;
+					tagList.innerHTML += `<li id="Tagging"><a class="navFilter tagsLinkElement" href="#">#${tagsElement}</a></li>`;
 				});
 			}
 		});
-		tags();
+		new Tagging().tags();
 	});
 }

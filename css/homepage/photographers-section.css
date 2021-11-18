@@ -1,6 +1,6 @@
 /* section photographes */
 .articlePh {
-	margin: 2px 132px;
+	margin: 1px 3%;
 	padding: 0.3rem;
 	text-align: center;
 	width: 22rem;
@@ -83,9 +83,12 @@ main > a:hover {
 	border-radius: 20 px;
 }
 
+.tagsLinkElement.actived {
+	color: #901c1c;
+}
+
 .tagsLinkElement:focus,
 .tagsLinkElement:hover {
-	background-color: #901c1c;
 	color: #fff;
 }
 
