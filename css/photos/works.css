@@ -29,6 +29,10 @@
 	cursor: pointer;
 }
 
+.ph-work-elt video::-webkit-media-controls {
+	display: none;
+}
+
 .ph-work-elt .ph-work-title {
 	width: 14.0625rem;
 }
