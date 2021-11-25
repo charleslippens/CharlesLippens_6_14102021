@@ -12,7 +12,7 @@ Ecrire du code JavaScript maintenable
 
 Gérer les évènements d'un site avec JavaScript
 
-## Notes:
+## Notes et critères:
 
 Notes de réunions: https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P5+Javascript+&+Accessibility/Notes+de+r%C3%A9union.pdf
 
