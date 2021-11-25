@@ -6,12 +6,12 @@ export default class MediaBuild {
 	photographersMedias(data) {
 		const media = data.media;
 		const gallery = new GalleryFactory().builder(media);
-		this.AreaEtLikes(gallery.totalLike, data.photographers);
+		this.AreaAndLikes(gallery.totalLike, data.photographers);
 		new LikesSub();
 	}
 
 	// créer une zone pour contenir le nombre total de likes et le prix du photographe
-	AreaEtLikes(totalLike, photographers) {
+	AreaAndLikes(totalLike, photographers) {
 		// On sépare la chaine des paramètres en fonction de "id="
 		const id = window.location.search.split("id=")[1];
 

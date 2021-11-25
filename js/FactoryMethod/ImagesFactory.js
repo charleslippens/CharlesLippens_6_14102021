@@ -7,7 +7,7 @@ export default class Image {
 		eltImage.setAttribute("alt", element.alt);
 		eltImage.setAttribute("role", "button");
 		eltImage.setAttribute("src", element.image);
-		eltImage.className = "ph-media";
+		eltImage.className = "photo-media";
 		return eltImage;
 	}
 }

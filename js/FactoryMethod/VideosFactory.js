@@ -7,7 +7,7 @@ export default class VideosFactory {
 		eltVideo.setAttribute("role", "button");
 		eltVideo.setAttribute("controls", "controls");
 		eltVideo.setAttribute("src", element.video);
-		eltVideo.className = "ph-media";
+		eltVideo.className = "photo-media";
 		return eltVideo;
 	}
 }
