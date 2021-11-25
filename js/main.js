@@ -7,7 +7,7 @@ import ApiFish from "./fetch/API.js";
 import HomePage from "./home/Home.js";
 import Tagging from "./home/Tags.js";
 import MediaBuild from "./photographes/Mediabuild.js";
-import TriMenu from "./photographes/Trier.js";
+import SortMenu from "./photographes/Sort.js";
 
 import PhotographerProfil from "./photographes/Photographe.js";
 
@@ -16,11 +16,11 @@ import PhotographerProfil from "./photographes/Photographe.js";
 		.getDataFish()
 		.then((data) => {
 			if (window.location.pathname.includes("/photographes.html")) {
-				// profil photographe header
+				// Profil photographe header
 				new PhotographerProfil().displayPhotographerProfil(data);
-				// menu de tri
-				new TriMenu().Tri(data);
-				// zone gallerie et likes du photographe
+				// Menu de tri
+				new SortMenu().sort(data);
+				// Zone gallerie et likes du photographe
 				new MediaBuild().photographersMedias(data);
 				return;
 			}

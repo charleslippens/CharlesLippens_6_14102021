@@ -7,7 +7,7 @@ export default class LightBox {
 	// initilisation de la lightbox quand on clique sur un media
 	init(Media, MediaName) {
 		// crée une nouvelle instance d'array à partir d'un objet tab
-		let Medias = Array.from(document.getElementsByClassName("ph-media"));
+		let Medias = Array.from(document.getElementsByClassName("photo-media"));
 		Medias.forEach((mediaWorks, index) =>
 			mediaWorks.addEventListener("click", () => {
 				let lightBoxM = document.getElementById("lightbox-media");

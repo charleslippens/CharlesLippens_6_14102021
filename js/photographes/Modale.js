@@ -3,7 +3,7 @@
 export default class Modale {
 	// Evenements, lancement et fermeture modale en cliquant, sur le bouton contactez moi
 	modal(data) {
-		let modalBtn = document.getElementById("ph-contact");
+		let modalBtn = document.getElementById("photo-contact");
 		let closeBtn = document.getElementsByClassName("close-form-icon");
 
 		if (modalBtn) {
@@ -33,7 +33,7 @@ export default class Modale {
 	formPhName(data) {
 		let id = window.location.search.split("id=")[1];
 		let photographers = !id ? data : data.filter((photographer) => photographer.id == id);
-		let phName = document.getElementById("ph-form-name");
+		let phName = document.getElementById("photo-form-name");
 		let phNameTemp = `${photographers[0].name}`;
 		phName.innerHTML = phNameTemp;
 	}

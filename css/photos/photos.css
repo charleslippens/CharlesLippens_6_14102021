@@ -1,24 +1,24 @@
 /* HEADER PH PROFIL */
-.ph-city {
+.photo-city {
 	color: #901c1c;
 	font-size: 0.9em;
 	margin: 0;
 }
 
-.ph-infos h2 {
+.photo-infos h2 {
 	color: #d3573c;
 	font-size: 2.4em;
 	font-weight: 400;
 	margin: 0;
 }
 
-.ph-profil {
+.photo-profil {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
 }
 
-.ph-profil button {
+.photo-profil button {
 	background: #901c1c;
 	border: none;
 	border-radius: 5px;
@@ -33,28 +33,28 @@
 	font-weight: bold;
 }
 
-.ph-profil button:hover,
-.ph-profil button:focus {
+.photo-profil button:hover,
+.photo-profil button:focus {
 	background: #d3573c;
 	color: #000000;
 	transform: scale(1.05);
 	font-weight: bold;
 }
 
-.ph-profil img {
+.photo-profil img {
 	border-radius: 50%;
 	height: 100px;
 	object-fit: cover;
 	width: 100px;
 }
 
-.ph-tagline {
+.photo-tagline {
 	color: #525252;
 	font-size: 0.9em;
 	margin: 0;
 }
 
-.ph-tags {
+.photo-tags {
 	border: 0.5px solid #c4c4c4;
 	border-radius: 0.6875rem;
 	color: #901c1c;
@@ -65,13 +65,13 @@
 	transition: all 0.2s;
 }
 
-.ph-tags:hover {
+.photo-tags:hover {
 	background-color: #901c1c;
 	color: #fff;
 }
 
 @media (max-width: 1199px) {
-	.ph-profil button {
+	.photo-profil button {
 		left: 0;
 		margin-left: auto;
 		margin-right: auto;
@@ -79,7 +79,7 @@
 		z-index: 1;
 	}
 
-	.ph-profil button {
+	.photo-profil button {
 		height: 55px;
 		left: 10rem;
 		position: absolute;
@@ -88,12 +88,12 @@
 }
 
 @media (min-width: 1200px) {
-	.ph-profil {
+	.photo-profil {
 		background-color: #fafafa;
 		margin: 0 20px;
 	}
 
-	.ph-profil button {
+	.photo-profil button {
 		height: 55px;
 		left: 45rem;
 		position: absolute;
@@ -102,28 +102,28 @@
 }
 
 @media (min-width: 900px) {
-	.ph-city {
+	.photo-city {
 		font-size: 20px;
 		margin-bottom: 1rem;
 	}
 
-	.ph-infos h2 {
+	.photo-infos h2 {
 		font-size: 50px;
 		font-weight: 400;
 		margin-bottom: 1rem;
 	}
 
-	.ph-profil {
+	.photo-profil {
 		background: #fafafa;
 		padding: 2rem;
 	}
 
-	.ph-profil img {
+	.photo-profil img {
 		height: 200px;
 		width: 200px;
 	}
 
-	.ph-tagline {
+	.photo-tagline {
 		color: #525252;
 		font-size: 15px;
 		margin-bottom: 1rem;

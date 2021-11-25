@@ -1,48 +1,48 @@
 "use strict";
 
-import Gallerie from "../FactoryMethod/Galerie.js";
+import GalleryFactory from "../FactoryMethod/GalleryFactory.js";
 
-export default class TriMenu {
+export default class SortMenu {
 	// Evenements, ouverterture/fermeture du menu de tri
-	Tri(data) {
+	sort(data) {
 		let arrowOpen = document.getElementsByClassName("tri-btn");
 		let arrowClose = document.getElementsByClassName("arrow-up-close");
-		let hiddenTri = document.getElementsByClassName("hidden-tri");
+		let hiddenSort = document.getElementsByClassName("hidden-tri");
 
 		if (arrowOpen) {
 			arrowOpen[0].addEventListener("click", () => {
-				hiddenTri[0].style.display = "block";
+				hiddenSort[0].style.display = "block";
 			});
-			this.TriMedias(data);
+			this.SortMedias(data);
 		}
 		if (arrowClose) {
 			arrowClose[0].addEventListener("click", () => {
-				hiddenTri[0].style.display = "none";
+				hiddenSort[0].style.display = "none";
 			});
 		}
 	}
 
 	// Trier les medias (par popularité et par titre)
-	TriMedias(data) {
-		let mediaTabTri = [];
+	SortMedias(data) {
+		let mediaTabSort = [];
 		let media = data.media;
-		let btnTri = document.querySelector(".tri-btn");
-		let hiddenTri = document.getElementsByClassName("hidden-tri");
+		let btnSort = document.querySelector(".tri-btn");
+		let hiddenSort = document.getElementsByClassName("hidden-tri");
 		// permet de créer une nouvelle instance d'arrayà partir d'un tab
-		let TriBtn = Array.from(document.getElementsByClassName("tri"));
+		let SortBtn = Array.from(document.getElementsByClassName("tri"));
 
-		TriBtn.forEach((btn, index) =>
+		SortBtn.forEach((btn, index) =>
 			btn.addEventListener("click", () => {
-				hiddenTri[0].style.display = "none";
+				hiddenSort[0].style.display = "none";
 				if (index == 0) {
-					btnTri.innerHTML = `Popularité`;
-					mediaTabTri = media.sort((a, b) => {
+					btnSort.innerHTML = `Popularité`;
+					mediaTabSort = media.sort((a, b) => {
 						// Trier par popularité dans l'ordre descandant
 						return b.likes - a.likes;
 					});
 				} else if (index == 1) {
-					btnTri.innerHTML = `Titre`;
-					mediaTabTri = media.sort((a, b) => {
+					btnSort.innerHTML = `Titre`;
+					mediaTabSort = media.sort((a, b) => {
 						// Trier par titre, retourne la chaîne de caractères courante en minuscules
 						if (a.photoName.toLowerCase() < b.photoName.toLowerCase()) {
 							return -1;
@@ -51,14 +51,14 @@ export default class TriMenu {
 						}
 					});
 				}
-				this.AffichTriMedia(mediaTabTri);
+				this.AffichSortMedia(mediaTabSort);
 			})
 		);
 	}
 
-	AffichTriMedia(mediaTabTri) {
+	AffichSortMedia(mediaTabSort) {
 		// Afficher les travaux (photos,) des photographes avec le tri
-		document.getElementById("ph-works").innerHTML = "";
-		new Gallerie().builder(mediaTabTri);
+		document.getElementById("photo-works").innerHTML = "";
+		new GalleryFactory().builder(mediaTabSort);
 	}
 }

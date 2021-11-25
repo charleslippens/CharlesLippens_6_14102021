@@ -2,7 +2,6 @@ const url = "api/photographers.json";
 
 import Tagging from "./Tags.js";
 import ApiFish from "../fetch/API.js";
-let articles = document.querySelectorAll(".articlePh");
 
 // Fonction filters venant fetch les données et remplir les articles filtrés par tags
 export function filters(filter) {

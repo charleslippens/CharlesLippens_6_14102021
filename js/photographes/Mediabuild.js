@@ -1,12 +1,12 @@
 import LikesSub from "./Likes.js";
-import GalleryFactory from "../FactoryMethod/Galerie.js";
+import GalleryFactory from "../FactoryMethod/GalleryFactory.js";
 
 export default class MediaBuild {
 	// Appel de Gallerie pour créer une section media
 	photographersMedias(data) {
 		const media = data.media;
-		const gallerie = new GalleryFactory().builder(media);
-		this.AreaEtLikes(gallerie.totalLike, data.photographers);
+		const gallery = new GalleryFactory().builder(media);
+		this.AreaEtLikes(gallery.totalLike, data.photographers);
 		new LikesSub();
 	}
 

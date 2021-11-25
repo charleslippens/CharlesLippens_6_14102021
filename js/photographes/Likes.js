@@ -3,7 +3,7 @@
 export default class LikesSub {
 	// ajoute ou supprime un like sur le bouton
 	constructor() {
-		let media = document.getElementById("ph-works");
+		let media = document.getElementById("photo-works");
 
 		media.addEventListener("click", (e) => {
 			let classListTarget =
