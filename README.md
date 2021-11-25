@@ -1,6 +1,6 @@
 ## Projet 6 : Créez un site accessible pour une plateforme de photographes
 
-Version avant le 10-11-21 : https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P5+Javascript+%26+Accessibility/P6+Front-End+plateforme+photographes+-+Scenario.pdf
+Version avant le 10-11-21 : https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P5+Javascript+%26+Accessibility/P6+Front-End+plateforme+photographes+-+Scenario.pdf (présence des Tags)
 
 ## Consignes:
 
