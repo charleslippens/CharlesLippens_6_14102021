@@ -11,3 +11,7 @@ Assurer l'accessibilité d'un site web
 Ecrire du code JavaScript maintenable
 
 Gérer les évènements d'un site avec JavaScript
+
+## Vérifications:
+
+Achecker, Google Wave, W3C CSS et HTML
