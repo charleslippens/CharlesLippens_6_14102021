@@ -1,6 +1,6 @@
 "use strict";
 
-export default class VideosFactory {
+export default class Video {
 	// création de l'élement vidéo
 	createHTML(element) {
 		const eltVideo = document.createElement("video");

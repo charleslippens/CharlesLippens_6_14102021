@@ -1,9 +1,11 @@
 import Tagging from "./Tags.js";
 import ApiFish from "../fetch/API.js";
+const container = document.getElementById("container");
 
 // Fonction filters venant fetch les données et remplir les articles filtrés par tags
 export function filters(filter) {
 	new ApiFish().getDataFish().then((data) => {
+		container.innerHTML = " ";
 		// Boucle sur chaque photographe filtré afin de lui créer son propre article
 		data.photographers.forEach((photographe) => {
 			if (photographe.tags.includes(filter)) {
