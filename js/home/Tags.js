@@ -1,5 +1,3 @@
-const url = "api/photographers.json";
-
 import { filters } from "./Filtrer.js";
 import ApiFish from "../fetch/API.js";
 
@@ -25,7 +23,7 @@ export default class Tagging {
 			});
 			// Ajout du listener avec appel à la fonction filters(filter)
 			let filterName = "";
-			let articles = document.querySelectorAll(".articlePh");
+			//let articles = document.querySelectorAll(".articlePh");
 			const nodeFilter = document.querySelectorAll(".navFilter");
 			nodeFilter.forEach((filter) => {
 				filter.addEventListener("click", (e) => {

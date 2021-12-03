@@ -8,8 +8,10 @@ export default class Media {
 	// Utilisation de factory method
 	renderMedia(element) {
 		let factory = null;
+		// eslint-disable-next-line no-prototype-builtins
 		if (element.hasOwnProperty("image")) {
 			factory = new Image();
+			// eslint-disable-next-line no-prototype-builtins
 		} else if (element.hasOwnProperty("video")) {
 			factory = new Video();
 		}
