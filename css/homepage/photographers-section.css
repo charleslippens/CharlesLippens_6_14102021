@@ -82,7 +82,6 @@ main > a:hover {
 	background-color: #901c1c;
 }
 
-.tagsLinkElement:focus,
 .tagsLinkElement:hover {
 	color: #fff;
 }

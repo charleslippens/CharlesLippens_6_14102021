@@ -9,8 +9,7 @@ html {
 	font-family: "DM Sans", sans-serif;
 }
 
-nav ul li:hover,
-li.actived {
+nav ul li:hover {
 	background-color: #901c1c;
 	color: #fff;
 }
