@@ -30,15 +30,11 @@
 	height: 35px;
 	position: fixed;
 	width: 170px;
-	font-weight: bold;
 }
 
-.photo-profil button:hover,
-.photo-profil button:focus {
-	background: #d3573c;
-	color: #000000;
+.photo-profil button:hover {
+	background: #651414;
 	transform: scale(1.05);
-	font-weight: bold;
 }
 
 .photo-profil img {
@@ -54,7 +50,7 @@
 	margin: 0;
 }
 
-.photo-tags {
+.v-tags {
 	border: 0.5px solid #c4c4c4;
 	border-radius: 0.6875rem;
 	color: #901c1c;
@@ -70,20 +66,13 @@
 	color: #fff;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
 	.photo-profil button {
 		left: 0;
 		margin-left: auto;
 		margin-right: auto;
 		right: 0;
 		z-index: 1;
-	}
-
-	.photo-profil button {
-		height: 55px;
-		left: 10rem;
-		position: absolute;
-		top: 11rem;
 	}
 }
 
@@ -95,9 +84,9 @@
 
 	.photo-profil button {
 		height: 55px;
-		left: 45rem;
+		left: 42rem;
 		position: absolute;
-		top: 11rem;
+		top: 9.8rem;
 	}
 }
 

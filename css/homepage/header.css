@@ -1,10 +1,9 @@
-/* header */
+/* HEADER */
 h1 {
 	color: #901c1c;
 	font-family: "DM Sans", sans-serif;
 	font-size: 14px;
 	width: fit-content;
-	margin-right: 100px;
 }
 
 header {
@@ -14,6 +13,10 @@ header {
 	justify-content: space-between;
 	margin-top: 2rem;
 	overflow: hidden;
+}
+
+header img {
+	width: 8rem;
 }
 
 header nav ul {
@@ -31,12 +34,7 @@ header nav ul {
 	top: 90px;
 }
 
-header img {
-	width: 8rem;
-	margin-left: 100px;
-}
-
-@media screen and (min-width: 1375px) {
+@media screen and (min-width: 1170px) {
 	h1 {
 		font-size: 1.8em;
 	}

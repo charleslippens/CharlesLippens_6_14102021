@@ -3,7 +3,6 @@
 //Afficher tous les photographes
 // Créer la section comprenant l'ensemble des photographes sur la page d'accueil à partir
 // des données JSON récupérées dans la class ApiFish
-// Appel de la fonction filters.
 
 export default class HomePage {
 	// Construire la section photographes
